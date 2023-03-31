@@ -1,0 +1,45 @@
+{
+    "terminal": {
+      "font": "Fira Code",
+      "fontSize": 14,
+      "cursor": "block",
+      "cursorBlink": true,
+      "foreground": "#ffffff",
+      "background": "#000000",
+      "colors": {
+        "black": "#000000",
+        "red": "#ff0000",
+        "green": "#00ff00",
+        "yellow": "#ffff00",
+        "blue": "#0000ff",
+        "magenta": "#ff00ff",
+        "cyan": "#00ffff",
+        "white": "#ffffff"
+      }
+    },
+    "shell": "zsh",
+    "environment": {},
+    "hotkeys": {
+      "toggle-window": "CmdOrCtrl+Alt+Shift+T"
+    },
+    "appearance": {
+      "css": "",
+      "frame": "native"
+    },
+    "enableWelcomeTab": true,
+    "window": {
+      "fullscreen": false,
+      "maximized": false,
+      "alwaysOnTop": false
+    },
+    "tabHighlight": "underline",
+    "enableTooltips": true,
+    "profileDefaults": {
+      "options": {
+        "cursorBlink": true,
+        "bellStyle": "none",
+        "webGLRenderer": true
+      }
+    }
+  }
+  

@@ -1,0 +1,66 @@
+# Aliases
+
+# Basic aliases
+alias ll='ls -lah'
+alias la='ls -a'
+alias l='ls -l'
+alias cp="cp -iv"
+alias mv="mv -iv"
+alias rm="rm -vI"
+alias bc="bc -ql"
+alias mkd="mkdir -pv"
+alias l='ls -lFh'     #size,show type,human readable
+alias la='ls -lAFh'   #long list,show almost all,show type,human readable
+alias lr='ls -tRFh'   #sorted by date,recursive,show type,human readable
+alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable
+alias ll='ls -l'      #long list
+alias ldot='ls -ld .*'
+alias lS='ls -1FSsh'
+alias lart='ls -1Fcart'
+alias lrt='ls -1Fcrt'
+alias lsr='ls -lARFh' #Recursive list of files and directories
+alias lsn='ls -1'     #A column contains name of files and directories
+alias grep='grep --color=auto'
+alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
+alias vim="nvim"
+alias t='tail -f'
+alias dud='du -d 1 -h'
+alias duf='du -sh *'
+alias fd='find . -type d -name'
+alias ff='find . -type f -name'
+alias h='history'
+alias hgrep="fc -El 0 | grep"
+alias help='man'
+alias p='ps -f'
+alias sortnr='sort -n -r'
+alias unexport='unset'
+alias glb='git log --graph --simplify-by-decoration --pretty=format:'%d' --all' #Visualize Git Branch Tree
+alias pip='python -m pip'
+alias ssha='eval $(ssh-agent)'
+alias htop='btop'
+
+# Git aliases
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit -m'
+alias gp='git push'
+alias gl='git log'
+alias gd='git diff'
+alias gco='git checkout'
+alias gb='git branch'
+alias gm='git merge'
+alias gcl='git clone'
+alias gpl='git pull'
+alias grm='git rm'
+alias gmv='git mv'
+
+# Kubernetes aliases
+alias k='kubectl'
+alias kg='kubectl get'
+alias kga='kubectl get --all-namespaces'
+alias kgaerr='kubectl get --all-namespaces pods | grep -v 1/1 | grep -v 2/2 | grep -v 3/3 | grep -v 4/4 | grep -v Completed'
+alias kgaerrw='kubectl get --all-namespaces -owide pods | grep -v 1/1 | grep -v 2/2 | grep -v 3/3 | grep -v 4/4 | grep -v Completed'
+alias kctx='kubectl config use-context'
+alias ke='kubectl exec -ti'
+alias kgwoyaml='kubectl get --watch -o=yaml'
+alias kali='docker run -it --rm kalilinux/kali-rolling:latest'
