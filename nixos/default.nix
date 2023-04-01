@@ -18,7 +18,7 @@
   # Configure the system timezone, hostname, and networking
   time.timeZone = "Europe/Paris";
   networking.hostName = "x220";
-  networking.networkmanager.enable = true
+  networking.networkmanager.enable = true;
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
