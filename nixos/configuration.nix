@@ -22,7 +22,7 @@
     '';
   };
 
-  # Enable Wayland and GNOME as the desktop manager
+  # Enable Wayland
   services.xserver = {
     enable = true;
     displayManager.gdm.enable = true;
@@ -31,21 +31,7 @@
     layout = "fr"; # Set the default keyboard layout to French
   };
 
-  # Excluding some GNOME applications from the default install
-  environment.gnome.excludePackages = (with pkgs; [
-  gnome-photos
-  gnome-tour
-  ]) ++ (with pkgs.gnome; [
-  cheese # webcam tool
-  gnome-music # music player
-  totem # video player
-  tali # poker game
-  iagno # go game
-  hitori # sudoku game
-  atomix # puzzle game
-]);
-
-  # Draft: Install Hyprland
+  # Install Hyprland
   # imports = [
   #   # Import the Hyprland NixOS module from the Flake
   #   (config.lib.importModules [{
